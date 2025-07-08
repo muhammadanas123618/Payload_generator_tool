@@ -25,6 +25,8 @@ git clone https://github.com/muhammadanas123618/payload_generator_tool.git
 cd payload_generator_tool
 pip install -r requirements.txt
 
+---
+
 ⚙️ Usage
 
 python main.py [OPTIONS]
@@ -61,6 +63,16 @@ python main.py --zap-scan http://example.com
 Install with:
 
 pip install -r requirements.txt
+
+Includes:
+
+    Flask (for web interface, optional)
+
+    tkinter (for GUI)
+
+    requests (for ZAP API)
+
+    argparse, base64, urllib.parse
 
 🔒 Security Disclaimer
 
