@@ -33,22 +33,21 @@ python main.py [OPTIONS]
 
 🔧 Options
 Option	Description	Example
---xss	Generate XSS payloads	--xss
+--xss	  Generate XSS payloads	  --xss
 --sqli	Generate SQLi payloads	--sqli
 --cmdi	Generate CMDi payloads	--cmdi
 --encode	Encoding: base64 or url	--encode=base64
---count	Number of payloads to display	--count=5
 --gui	Launch the GUI version (Tkinter)	--gui
 --zap-scan	Run an OWASP ZAP scan (optional)	--zap-scan http://target.com
 🧪 Examples
 
-Generate 5 Base64-encoded XSS payloads:
+Generate Base64-encoded XSS payloads:
 
-python main.py --xss --encode=base64 --count=5
+python main.py --xss --encode=base64
 
-Generate 3 SQL injection payloads:
+Generate SQL injection payloads:
 
-python main.py --sqli --count=3
+python main.py --sqli
 
 Launch GUI:
 
@@ -65,8 +64,6 @@ Install with:
 pip install -r requirements.txt
 
 Includes:
-
-    Flask (for web interface, optional)
 
     tkinter (for GUI)
 
